@@ -1,0 +1,21 @@
+@page
+@model Signup
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="signup-container">
+    <form method="post">
+        <h2>Sign Up</h2>
+        <input type= "text" name="FirstName" placeholder= "First Name" asp-for = "FirstName" required />
+        <input type= "text" name= "LastName" placeholder= "Last Name" asp-for = "LastName" required />
+        <input type= "tel" name= "PhoneNumber" placeholder= "Phone Number" asp-for= "PhoneNumber" required/>
+        <input type= "email" name= "Email" placeholder= "Email" asp-for= "Email" required />
+        <input type= "password" name= "Password" placeholder= "Password" asp-for= "Password" required/>
+        <input type= "text" name= "StudentNumber" placeholder= "Student Number" asp-for= "StudentNumber" required />
+
+        <button type= "Submit">Sign Up</button>
+        
+        <p>Already made an account? <a href= "/Login">Login here</a> </p>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+@page
+@model LP
+@{
+    ViewData["Title"] = "Login Page";
+}
+<div class= "login-container">
+    <form method="post">
+        <h2>Login</h2>
+        <input type= "email" name= "Email" placeholder= "Email" required />
+        <input type="password" name= "Password" placeholder= "Password" required />
+        <label>
+            <input type = "checkbox" name= "RememberMe" />
+            Remember me
+        </label>
+        <button type= "submit">Login</button>
+        <div>
+            <p>Or login-container with </p>
+            <button type action= "button">Thomas More</button>
+            <button type action= "button"> Google</button>
+        </div>
+        <p>Not a member? <a href= "/Signup"> Sign up now</a></p>
+    </form>
+</div>
